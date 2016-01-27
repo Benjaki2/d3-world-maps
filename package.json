@@ -2,6 +2,7 @@
   "name": "d3-world-maps",
   "author": "Benjamin King <benking4@gmail.com>",
   "version": "0.0.1",
+  "license": "ISC",
   "description": "Barebone world map template build for displaying data",
   "main": "./lib/index.js",
   "scripts": {
@@ -15,6 +16,10 @@
     "JavaScipt"
   ],
   "homepage": "https://github.com/benjaki2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Benjaki2/d3-world-maps"
+  },
   "devDependencies": {
     "babel": "^5.4.7",
     "babel-eslint": "*",
