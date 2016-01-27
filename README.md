@@ -29,10 +29,10 @@ import * as d3WorldMaps from 'd3-world-maps';
 ```JavaScript
 var d3WorldMaps = require('d3-world-maps'); 
 ```
+
+### Initiate Map
+
 ```JavaScript
-/**
- *  Create New Map Instance and set Custom options 
- **/
 
 var map = new d3WorldMaps.WorldMap(
   {
