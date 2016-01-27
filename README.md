@@ -4,7 +4,7 @@ This library was build to promote data sharing on a global scale.
 
 # How it works
 
-In your html, you must create a div with an id of 'world-map' or craete a map cash element. Specify the dimensions here with height & width attributes.
+In your html, you must create a div with an id of 'world-map' or create a custom class/id to select. Specify the dimensions here with height & width attributes.
 
 ```html
 <body>
@@ -12,21 +12,33 @@ In your html, you must create a div with an id of 'world-map' or craete a map ca
 </body>
 
 ```
+# Install 
+
+`npm install d3-world-maps`
+
 # Make a Map
 
-```JavaScript
-import * as d3WorldMaps from 'd3-world-maps'; // ES6
-var WorldMap = require('d3-world-maps'); // CommonJS
+### ES6
 
+```JavaScript
+import * as d3WorldMaps from 'd3-world-maps';
+```
+
+### CommonJS
+
+```JavaScript
+var d3WorldMaps = require('d3-world-maps'); 
+```
+```JavaScript
 /**
- *  Create new Map instance set options 
+ *  Create New Map Instance and set Custom options 
  **/
 
 var map = new d3WorldMaps.WorldMap(
   {
     el: '.world-map', // where the Map Lies
     projection: 'Mercator',
-    points: [
+    locationPins: [
       {coords: [55, 55],  opacity:.2},
       {coords: [13, 13], radius: 4},
       {coords: [12, -45], color: 'yellow', radius: 4, opacity:.7}
@@ -34,9 +46,8 @@ var map = new d3WorldMaps.WorldMap(
     oceanFill: 'black'
 );
 map.init();
-
-
 ```
+
 # Options
 
 ```JavaScript
@@ -49,8 +60,8 @@ const defaultOptions = {
   locationPins: null
 };
 
-
 ```
+
 # Credits
 
 The Orthographic xyz axis drag functionality was inspired by: [Rotate the World](https://www.jasondavies.com/maps/rotate/)
