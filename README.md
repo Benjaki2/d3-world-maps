@@ -1,10 +1,10 @@
 # D3 World Maps Template
 
-This library was build to promote data sharing on a global scale.
+This library was built to promote data sharing on a global scale.
 
 # How it works
 
-In your html, you must create a div with an id of 'world-map' or create a custom class/id to select. Specify the dimensions here with height & width attributes.
+In your html, you must create an element with an id of 'world-map' or create a custom class or id to select. Specify the dimensions here with height & width attributes.
 
 ```html
 <body>
@@ -39,9 +39,9 @@ var map = new d3WorldMaps.WorldMap(
     el: '.world-map', // where the Map Lies
     projection: 'Mercator',
     locationPins: [
-      {coords: [55, 55],  opacity:.2},
+      {coords: [55, 55],  opacity: 0.2},
       {coords: [13, 13], radius: 4},
-      {coords: [12, -45], color: 'yellow', radius: 4, opacity:.7}
+      {coords: [12, -45], color: 'yellow', radius: 4, opacity: 0.7}
     ],
     oceanFill: 'black'
 );

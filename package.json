@@ -1,7 +1,7 @@
 {
   "name": "d3-world-maps",
   "author": "Benjamin King <benking4@gmail.com>",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "ISC",
   "description": "Barebone world map template build for displaying data",
   "main": "./lib/index.js",
