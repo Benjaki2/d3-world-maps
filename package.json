@@ -1,0 +1,43 @@
+{
+  "name": "d3-world-maps",
+  "author": "Benjamin King <benking4@gmail.com>",
+  "version": "0.0.1",
+  "description": "Barebone world map template build for displaying data",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --require chai --growl --compilers js:babel/register test/setup.js test/*",
+    "prepublish": "gulp"
+  },
+  "keywords": [
+    "d3",
+    "maps",
+    "topojson",
+    "JavaScipt"
+  ],
+  "homepage": "https://github.com/benjaki2",
+  "devDependencies": {
+    "babel": "^5.4.7",
+    "babel-eslint": "*",
+    "babelify": "^6.1.1",
+    "browserify": "^10.2.1",
+    "chai": "^3.2.0",
+    "chai-jquery": "^2.0.0",
+    "d3": "*",
+    "del": "^1.2.0",
+    "eslint": "*",
+    "gulp": "^3.8.11",
+    "gulp-babel": "^5.1.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^1.2.0",
+    "jquery": "*",
+    "jsdom": "^3.1.2",
+    "mocha": "^2.3.4",
+    "sinon": "^1.16.1",
+    "sinon-chai": "^2.8.0",
+    "topojson": "*",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

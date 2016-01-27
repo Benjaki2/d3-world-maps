@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+</html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF8">
+
+  </head>
+  <body>
+    <div id="world-map" style="width:800px; height:500px;"></div>
+    <script src="../browser/map.js"></script>
+    <script>
+    var map = new d3WorldMaps.WorldMap({
+        locationPins: [
+          {coords: [55, 55],  opacity:.2},
+          {coords: [13, 13], radius: 4},
+          {coords: [12, -45], color: 'yellow', radius: 4, opacity:.7}
+        ],
+        oceanFill: 'black'
+      })
+    map.init();
+    </script>
+  </body>
+</html>

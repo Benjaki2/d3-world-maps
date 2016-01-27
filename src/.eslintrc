@@ -1,0 +1,33 @@
+{
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "ecmaFeatures": {
+    "jsx": true
+  },
+  "parser": "babel-eslint",
+  "rules": {
+    "strict": 0,
+    "valid-jsdoc": 0,
+    "comma-spacing": 1,
+    "key-spacing": 0,
+    "no-underscore-dangle": 0,
+    "no-unused-vars": [1, { "vars": "all", "args": "none" }],
+    "no-undef": 1,
+    "new-cap": 0,
+    "no-param-reassign": 0,
+    "no-spaced-func": 1,
+    "padded-blocks": 0,
+    "camelcase": 1,
+    "semi": 1,
+    "no-extra-semi": 1,
+    "no-mixed-spaces-and-tabs": 1,
+    "no-trailing-spaces": 1,
+    "space-before-function-paren": 0,
+    "space-in-parens": 1,
+    "no-var": 2,
+    "indent": [2, 2],
+    "quotes": [1, "single", "avoid-escape"]
+  }
+}
